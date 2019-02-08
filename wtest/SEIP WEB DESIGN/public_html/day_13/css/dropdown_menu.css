@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+/*    background: #ccc;*/
+}
+.main_menu{
+    height: 40px;
+    background: #ccc;
+    
+}
+.main_menu ul{}
+.main_menu ul li{
+    float: left;
+    position: relative;
+}
+.main_menu ul li a{
+    color: #000;
+    font-family: fantasy;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-right: 1px solid #999;
+    display: block;
+    padding:12px 29px; 
+    
+}
+
+.main_menu ul li:last-child a{
+    border: none;
+}
+
+.main_menu .sub_menu{
+    position: absolute;
+    background: #ccc;
+    width: 170px;
+    border-top: 1px solid #eee;
+    left: 0;
+    top: 70px;
+    transition: all 1s ease;
+    opacity: 0;
+    visibility: hidden;
+   
+}
+.main_menu .sub_menu li a{
+    border-right: none;
+}
+
+.main_menu ul li:hover .sub_menu{
+    top: 40px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/*.main_menu .sub_menu{
+    position: absolute;
+    background: #ccc;
+    width: 170px;
+    border-top: 1px solid #eee;
+    left: -9999px;
+    top: 40px;
+    transition: all 1.5s ease;
+    opacity: 0;
+}
+
+.main_menu ul li:hover .sub_menu{
+    left: 0;
+    opacity: 1;
+   
+} */
+
+
+.box{
+    width: 300px;
+    height: 300px;
+    /*background: red;*/
+    /*background: linear-gradient(to right,red,green,yellow);*/
+    background: radial-gradient(red,yellow,red);
+    margin: 50px auto 0;
+    border: 10px ridge #0000ff;
+    border-radius: 150px 0 150px 0;
+    transition: 1s;
+    
+    /*background: url(../img/tree.jpg)no-repeat center/cover;*/
+    /*transform: rotateY(180deg);*/
+    
+    /*box-shadow:0 7 7 0;*/
+}
+.box:hover{
+    border-radius: 50%;
+    /*transform: scale(1.2);*/
+    /*transform: rotateX(90deg);*/
+}
+
+.text_shadow{
+    font-size: 50px;
+    color: red;
+    font-weight: 700;
+    font-family: tahoma;
+    margin-top: 50px;
+    /*text-shadow:0px 20px 10px #000;*/
+    /*text-shadow:20px 20px 5px #000;*/
+    text-shadow:0px 0px 0px #000;
+    transition: 1s;
+       
+}
+
+.text_shadow:hover{
+   text-shadow:20px 20px 5px #000;
+   
+}

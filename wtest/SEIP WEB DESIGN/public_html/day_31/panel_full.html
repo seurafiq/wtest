@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mystyle.css">
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my_menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="images/643167984.jpg" class="navbar-brand">Company LOGO</a>
+
+                </div>
+                <div class="collapse navbar-collapse" id="my_menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Service <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Service One</a></li>
+                                <li><a href="#">Service two</a></li>
+                                <li><a href="#">Service three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="navbar-form">
+                            <div class="input-group">
+                                <input type="search" name="search" class="form-control " size="70">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary"  style="border-radius: 0px;">
+                                        <span class="glyphicon glyphicon-search"></span>
+
+                                    </button>
+
+                                </span>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#my_sign_in_modal" data-toggle="modal" title="Login"><span class="glyphicon glyphicon-lock"></span></a></li>
+                        <li><a href="#my_sign_up_modal" data-toggle="modal" title="Sign Up"><span class="glyphicon glyphicon-user"></span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <hr/>
+        <hr/>
+        <hr/>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <button type="button" data-toggle="modal" data-target="#my_sign_up_modal" class="btn btn-primary">Click Me</button>
+
+
+                    <!-- modal signup part -->
+
+                    <div class="modal fade" id="my_sign_up_modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>This is a modal header</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>This is a modal body</h3>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn bg-primary" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Modal sign up part ends here-->
+
+
+                    <!-- modal sign in part start here -->
+
+                    <div class="modal fade" id="my_sign_in_modal">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>This is a modal header</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>This is a modal body</h3>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn bg-primary" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Modal sign in part ends here-->
+
+                </div>      
+            </div>
+
+        </div>
+
+        <hr/>
+        <!-- Panel starts Here-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <p class="panel-title text-center">Fill the form</p>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <form action="" method="post" class="form-horizontal">
+
+                                <div class="form-group">
+                                    <label class="control-label col-lg-3">First Name</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" name="first_name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-lg-3">Last Name</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" name="last_name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-lg-3">Email Address</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" name="email_address" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-lg-offset-3 col-lg-9">
+                                        <input type="submit" name="btn" class="btn btn-primary btn-block" value="save me">
+                                    </div>
+                                </div>
+
+
+
+                            </form>
+                        </div>
+                        <div class="panel-footer">
+                            <p>This is panel footer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!----- Table of panel goes here--->
+                <div class="col-lg-6">
+                    <div class="panel-group">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <a  href="#panel1" data-toggle="collapse" class="panel-title text-center">All student goes here</a>
+                        </div>
+                        <div class="collapse panel-collapse in" id="panel1">
+                            <div class="panel-body">
+
+                                <table class="table table-bordered table-striped">
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Email</td>
+                                        <td>Mobile</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Email</td>
+                                        <td>Mobile</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Email</td>
+                                        <td>Mobile</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <a  href="#panel2" data-toggle="collapse" class="panel-title text-center">Employee details is here</a>
+                        </div>
+                        <div class="collapse panel-collapse in" id="panel2">
+                            <div class="panel-body">
+
+                                <table class="table table-bordered table-striped">
+                                    <tr>
+                                        <td>Employee name</td>
+                                        <td>Address</td>
+                                        <td>Mobile</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Employee name</td>
+                                        <td>Address</td>
+                                        <td>Mobile</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Employee name</td>
+                                        <td>Address</td>
+                                        <td>Mobile</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <a  href="#panel3" data-toggle="collapse" class="panel-title text-center">All customer details</a>
+                        </div>
+                        <div class="collapse panel-collapse in" id="panel3">
+                            <div class="panel-body">
+
+                                <table class="table table-bordered table-striped">
+                                    <tr>
+                                        <td>customer name</td>
+                                        <td>Email</td>
+                                        <td>Mobile</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>customer name</td>
+                                        <td>Email</td>
+                                        <td>Mobile</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Email</td>
+                                        <td>Mobile</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <script src="js/ajax_google_jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

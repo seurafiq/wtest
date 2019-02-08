@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Full E-Commerce web-site practice</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="font-awesome/css/all.min.css">
+        <link rel="stylesheet" href="css/mystyle.css">
+    </head>
+    <body>
+
+        <!------ navbar// menu bar starts here--------->
+
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my_menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <img src="images/R_logo.jpg" alt="logo" style="height: 40px; margin-top:5px;">
+
+                </div>
+
+                <div id="my_menu" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+
+
+                    <ul class="nav navbar-nav my_searchbar_margin">
+                        <li class="navbar-form">
+                            <form action="" method="post">
+                                <div class="input-group">
+                                    <input type="text" name="name" class="form-control" size="40">
+                                    <span class="input-group-btn">
+                                        <button type="submit" name="btn" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                        <li><a href="#my_sign_in_modal" data-toggle="modal"><span class="glyphicon glyphicon-lock"></span> Login</a></li>
+                        <li><a href="#my_sign_up_modal" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!------ navbar///menu bar ends here--------->
+        
+        
+        
+        
+        
+        
+        <!------ Slider starts here--------->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="carousel slide" data-ride="carousel" id="my_carousel_slider" data-interval="2200">
+                        <ol class="carousel-indicators">
+                            <li data-target="#my_carosel_slider" data-slide-to="0" class="active"></li>
+                            <li data-target="#my_carosel_slider" data-slide-to="0"></li>
+                            <li data-target="#my_carosel_slider" data-slide-to="0"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="images/slider1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/slider2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="images/slider3.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <a href="#my_carousel_slider" class="left carousel-control" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#my_carousel_slider" class="right carousel-control" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------ Slider ends here--------->
+        
+        
+        <!------------Main COntent starts here----------->
+        
+        
+        <div class="container product_height">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-body panel_shadow">
+                                    <div class="well well-sm text-center text-success">Our Popular Products</div>
+                                    
+                                    <div class="row">
+                                    <div class="col-lg-4 col-md-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/jercy-3.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>550 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                
+                                     <div class="col-lg-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/jercy-2.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>520 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                     <div class="col-lg-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/jercy-1.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>530 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                     <div class="col-lg-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/jacket-3.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>250 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                     <div class="col-lg-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/jacket-2.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>150 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                     <div class="col-lg-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/jacket-1.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>50 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                        </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul class="pagination pull-right">
+                                            <li><a href="">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <h3 class="text-center text-success">Popular category</h3>
+                                <hr/>
+                                <a href="" class="list-group-item text-center">Man Fashion</a>
+                                <a href="" class="list-group-item text-center">Kids Fashion</a>
+                                <a href="" class="list-group-item text-center">Woman Fashion</a>
+                                <a href="categoryOne.html" class="list-group-item text-center">Electronics</a>
+                                <a href="" class="list-group-item text-center">Home Items</a>
+                                <a href="" class="list-group-item text-center">Health Items</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <h3 class="text-center text-success">Popular Manufacturer</h3>
+                                <hr/>
+                                <a href="" class="list-group-item text-center">I-PHONE</a>
+                                <a href="" class="list-group-item text-center">XIOMI</a>
+                                <a href="" class="list-group-item text-center">WALTON</a>
+                                <a href="" class="list-group-item text-center">SYMPHONY</a>
+                                <a href="" class="list-group-item text-center">NOKIA</a>
+                                <a href="" class="list-group-item text-center">SAMSUNG</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-------------Another copy goes here--->
+        <div class="container product_height">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-body panel_shadow">
+                                    <div class="well well-sm text-center text-success">Most Recent Product</div>
+                                    
+                                    <div class="row">
+                                    <div class="col-lg-4 col-md-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/dell-3.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>550 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                
+                                     <div class="col-lg-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/dell-2.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>520 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                     <div class="col-lg-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/dell-1.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>530 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                     <div class="col-lg-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/camera-3.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>250 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                     <div class="col-lg-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/camera-2.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>150 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                     <div class="col-lg-4 product_shadow">
+                                        <div class="thumbnail">
+                                        <img src="images/camera-1.jpg" alt="" class="img-thumbnail">
+                                        <div class="caption">
+                                            <p class="text-info pull-right">TK 1200</p>
+                                            <p class="text-info">Product Name</p>
+                                            <p class="text-justify">Some content goes here Some content goes here Some content goes here Some content goes here</p>
+                                            <a class="btn btn-primary pull-right">Details</a>
+                                            <a href="" class="btn btn-primary">Quick View</a>
+                                            <hr/>
+                                            <p class="pull-right">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </p>
+                                            <p>50 View</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                        </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul class="pagination pull-right">
+                                            <li><a href="">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="panel panel-default" style="border-radius: 0px;">
+                        <div class="panel-heading text-center" style="background-color: darksalmon;color: white;border-radius: 0px;">
+                            Some Content Goes here
+                        </div>
+                        <div class="panel-body">
+                            <div class="list-group">
+                               
+                                <a href="#categoryOne.html" class="list-group-item text-center">Man Fashion</a>
+                                <a href="" class="list-group-item text-center">Kids Fashion</a>
+                                <a href="" class="list-group-item text-center">Woman Fashion</a>
+                                <a href="" class="list-group-item text-center">Electronics</a>
+                                <a href="" class="list-group-item text-center">Home Items</a>
+                                <a href="" class="list-group-item text-center">Health Items</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <h3 class="text-center text-success">Popular Manufacturer</h3>
+                                <hr/>
+                                <a href="" class="list-group-item text-center">I-PHONE</a>
+                                <a href="" class="list-group-item text-center">XIOMI</a>
+                                <a href="" class="list-group-item text-center">WALTON</a>
+                                <a href="" class="list-group-item text-center">SYMPHONY</a>
+                                <a href="" class="list-group-item text-center">NOKIA</a>
+                                <a href="" class="list-group-item text-center">SAMSUNG</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        <!------------Main COntent ends here----------->
+        
+        <div style="background-color: #666666;border-bottom: 5px ridge red;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <h3 class="text-center" style="color: white;">Our Page</h3>
+                        <hr/>
+                        <ul class="my_ul">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">HELP</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <h3 class="text-center" style="color: white;">For Emergency Contact</h3>
+                        <hr/>
+                        <address>
+                            <span>House No : 24</span><br/>
+                            <span>Road No : 8</span><br/>
+                            <span>Sector : 11</span><br/>
+                            <span>Uttara 1230</span><br/>
+                            <span>Dhaka,Bangladesh</span><br/>
+                            <span>Phone : 01686313821</span><br/>
+                            <span>Email : rafiqislam319@gmail.com</span><br/>
+                        </address>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                        <h3 class="text-center" style="color: white">Stay with US Through</h3>
+                        <hr/>
+                        <a href=""><i class="fa-3x fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fa-3x fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-3x fab fa-google-plus-square"></i></a>
+                        <a href=""><i class="fa-3x fab fa-youtube-square"></i></a>
+                        <hr/>
+                        <a href="" style="color: white;">Cite Map</a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <h3 class="text-center" style="color: white">You may subscribe here</h3>
+                        <hr/>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label class="text-center" style="color: white;">Enter Your Email Address</label>
+                                <input type="email" name="email_address" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="btn" class="btn btn-primary btn-block" value="Save me">
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        <div style="background-color: #000000">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br/>
+                        <a href="#" class="pull-right" style="color: white;">My Company Name</a>
+                        <p style="color: white;">Copyright@mycompany</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+
+
+        <!------Login modal starts here------>
+
+        <div class="modal fade" id="my_sign_in_modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+
+                    <div class="modal-header">
+                        <h3 class="text-center text-success">Please use your valid email and password</h3>
+                    </div>
+
+
+
+                    <div class="modal-body" style="padding-bottom: 0px;">
+                        <div class="panel panel-default">
+                            <div class="panel-body" style="padding-bottom: 0px;">
+                                <form action="" method="post" class="form-horizontal">
+
+
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-3">Email Address</label>
+                                        <div class="col-lg-9">
+                                            <input type="email" name="email_address" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-3">Password</label>
+                                        <div class="col-lg-9">
+                                            <input type="password" name="password" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-lg-offset-3 col-lg-9 checkbox">
+                                            <label><input type="checkbox" name="agree" value="1">Remember me</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-lg-offset-3 col-lg-9 checkbox">
+                                            <input type="submit" name="btn" value="Login" class="btn btn-primary btn-block">
+                                        </div>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------Login modal ends here------>
+
+
+
+        <!------Sign UP modal starts here------>
+        
+        <div class="modal fade" id="my_sign_up_modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+
+                    <div class="modal-header">
+                        <h3 class="text-center text-success">Please fill the field carefully</h3>
+                    </div>
+
+
+
+                    <div class="modal-body" style="padding-bottom: 0px;">
+                        <div class="panel panel-default">
+                            <div class="panel-body" style="padding-bottom: 0px;">
+                                <form action="" method="post" class="form-horizontal">
+                                        
+                                    
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-3">First Name</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" name="first name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-3">Last Name</label>
+                                        <div class="col-lg-9">
+                                            <input type="text" name="last name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-3">Email Address</label>
+                                        <div class="col-lg-9">
+                                            <input type="email" name="email_address" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-3">Password</label>
+                                        <div class="col-lg-9">
+                                            <input type="password" name="password" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="control-label col-lg-3">Address</label>
+                                        <div class="col-lg-9">
+                                            <textarea class="form-control" name="address"></textarea>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="form-group">
+                                        <div class="col-lg-offset-3 col-lg-9 checkbox">
+                                            <label><input type="checkbox" name="agree" value="1">I agree with all terms and condition</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-lg-offset-3 col-lg-9">
+                                            <input type="submit" name="btn" value="Sign Up" class="btn btn-primary btn-block">
+                                        </div>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!------Sign UP modal ends here------>
+
+
+
+
+        <script src="js/ajax_google_jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

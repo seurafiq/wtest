@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--        <table>
+                    <tr>
+                        <td>First Number</td>
+                        <td><input type="number" id ="first_number"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Second Number</td>
+                        <td><input type="number" id ="second_number"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Result</td>
+                        <td><input type="text" id ="result"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value ="+" onclick="addition();">
+                            <input type="button" value ="-">
+                            <input type="button" value ="*">
+                            <input type="button" value ="/">
+                            <input type="button" value ="%">
+                        </td>
+                    </tr>
+                </table>
+                
+                <script>
+                    function addition() {
+                        var first_number=Number(document.getElementById("first_number").value);
+                        var second_number=Number(document.getElementById("second_number").value);
+                        var res=first_number+second_number;
+        //                alert(res);
+                        document.getElementById("result").value=res;
+                    }
+                    
+                </script>
+                
+            </body>-->
+
+        <table>
+            <tr>
+                <td>First Number</td>
+                <td><input type="number" id ="first_number"></td>
+            </tr>
+
+            <tr>
+                <td>Second Number</td>
+                <td><input type="number" id ="second_number"></td>
+            </tr>
+
+            <tr>
+                <td>Result</td>
+                <td><input type="text" id ="result"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value ="+" onclick="my_calculator('+');">
+                    <input type="button" value ="-" onclick="my_calculator('-');">
+                    <input type="button" value ="*" onclick="my_calculator('*');">
+                    <input type="button" value ="/" onclick="my_calculator('/');">
+                    <input type="button" value ="%" onclick="my_calculator('%');">
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            function my_calculator(operator) {
+                var first_number = Number(document.getElementById("first_number").value);
+                var second_number = Number(document.getElementById("second_number").value);
+
+                switch (operator) {
+                    case '+':
+                    {
+                        var res = first_number + second_number;
+                        break;
+                    }
+
+                    case '-':
+                    {
+                        var res = first_number - second_number;
+                        break;
+                    }
+
+                    case '*':
+                    {
+                        var res = first_number * second_number;
+                        break;
+                    }
+
+                    case '/':
+                    {
+                        var res = first_number / second_number;
+                        break;
+                    }
+
+                    case '%':
+                    {
+                        var res = first_number % second_number;
+                        break;
+                    }
+
+
+                }
+                document.getElementById("result").value = res;
+            }
+
+
+        </script>
+
+    </body>
+
+
+
+</html>

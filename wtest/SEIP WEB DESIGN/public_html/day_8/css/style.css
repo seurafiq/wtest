@@ -1,0 +1,17 @@
+
+.box-1{
+    width: 300px;
+    height: 200px;
+    border-width: 5px;
+    border-style: solid;
+    color:red; 
+    float: left;
+}
+.box-2{
+    width: 300px;
+    height: 200px;
+    border-width: 1px;
+    border-style: solid;
+    color: #ff00ff;
+    float: right;
+}

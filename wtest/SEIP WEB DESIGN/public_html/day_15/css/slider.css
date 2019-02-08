@@ -1,0 +1,40 @@
+.box{
+    
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: my_slider;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.box2{
+    
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    top: 0;
+    right:0;
+    animation: my_slider-1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes my_slider{
+    0%{left:0;top:0}
+    20%{left:500px;top:0;background:pink}
+    40%{left:500px;top:500px;background:yellow}
+    80%{left:0px;top:500px;background:magenta}
+    100%{left:0;top:0}
+    
+}
+@keyframes my_slider-1{
+    0%{right:0;top:0}
+    20%{right:500px;top:0;background:pink}
+    40%{right:500px;top:500px;background:yellow}
+    80%{right:0px;top:500px;background:magenta}
+    100%{right:0;top:0}
+    
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Practice</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css "/>
+        <link rel="stylesheet" href="css/mystyle.css "/>
+    </head>
+    <body style="padding: 70px;">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my_menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse" id="my_menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Service <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Service One</a></li>
+                                <li><a href="#">Service two</a></li>
+                                <li><a href="#">Service three</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="navbar-form">
+                            <div class="input-group">
+                                <input type="search" name="search" class="form-control " size="70">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary"  style="border-radius: 0px;">
+                                        <span class="glyphicon glyphicon-search"></span>
+
+                                    </button>
+
+                                </span>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" title="Login"><span class="glyphicon glyphicon-lock"></span></a></li>
+                        <li><a href="#" title="Sign Up"><span class="glyphicon glyphicon-user"></span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <hr/>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="jumbotron">
+                        
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#a" data-toggle="tab">Product details</a></li>
+                            <li><a href="#b" data-toggle="tab">Product specification</a></li>
+                            <li><a href="#c" data-toggle="tab">customer review</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="a" class="tab-pane active">
+                                <h1>Hello product Description</h1>
+                            </div>
+                            <div id="b" class="tab-pane">
+                                <form>
+                                    <textarea class="form-control"></textarea>
+                                </form>
+                            </div>
+                            <div id="c" class="tab-pane">
+                                <h1>Customer review</h1>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    <div class="jumbotron">
+                        <h2 class="text-success text-center">some contents goes here</h2>
+                        <p class="text-info text-justify">some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here </p>
+                    </div>
+                    <div class="jumbotron">
+                        <h2 class="text-success text-center">some contents goes here</h2>
+                        <p class="text-info text-justify">some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here </p>
+                    </div>
+                    <div class="jumbotron">
+                        <h2 class="text-success text-center">some contents goes here</h2>
+                        <p class="text-info text-justify">some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-success text-center">some contents goes here</h2>
+                        <p class="text-info text-justify">some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here some contents goes here </p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

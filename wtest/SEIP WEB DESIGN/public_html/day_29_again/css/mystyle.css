@@ -1,0 +1,36 @@
+.header_height{height: 200px;}
+.menu_height{height: 50px;}
+.content_height{height: 600px;}
+.big_footer_height{height: 250px;}
+.footer_height{height: 40px;}
+
+[class*='col-'] {
+/*    border: 1px dotted gray;
+    padding: 0px;*/
+}
+
+@media screen and (max-width:479px) {
+    [class*='col-']{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+    .my_style{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        
+        
+    }
+    .row_position{
+        position: relative; 
+    }
+    
+}
+
+.logo_image{
+    width: 100%;
+    height: 100%;
+        
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color change Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            #box_one{
+                height: 200px;
+                width: 300px;
+                background-color: yellow;
+            }
+        </style>
+        
+    </head>
+<!--    <body>
+        <button type="button" onclick="change_color_red();">RED</button>
+        <button type="button" onclick="change_color_green();">GREEN</button>
+        <button type="button" onclick="change_color_blue();">BLUE</button>
+        
+        
+        <div id="box_one"></div>
+        
+        <script>
+            function change_color_red() {
+            var x=document.getElementById("box_one");
+            x.style.backgroundColor='red';
+            }
+            
+            function change_color_green() {
+            var x=document.getElementById("box_one");
+            x.style.backgroundColor='green';
+        }
+            function change_color_blue() {
+            var x=document.getElementById("box_one");
+            x.style.backgroundColor='blue';
+        }
+            
+        </script>
+        
+    </body>-->
+    
+    <!--EKnnnnn Dynamic way te korbo-->
+    
+    <body>
+        <button type="button" onclick="change_color('red');">RED</button>
+        <button type="button" onclick="change_color('green');">GREEN</button>
+        <button type="button" onclick="change_color('blue');">BLUE</button>
+        
+        
+        <div id="box_one"></div>
+        
+        <script>
+            function change_color(color) {
+            var x=document.getElementById("box_one");
+            x.style.backgroundColor=color;
+            }
+            
+        </script>
+        
+    </body>
+    
+    
+</html>

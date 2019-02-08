@@ -1,0 +1,162 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .box_one{
+                height: auto;
+                width: 400px;
+                border: 1px solid red;
+                padding-left: 35px;
+            }
+            
+            #box_two{
+                height: 200px;
+                width: 300px;
+                border: 1px solid red;
+                position: absolute;
+                top: 130px;
+                right: 0px;
+                display: none;
+            }
+            
+            #box_three{
+                height: 200px;
+                width: 300px;
+                border: 1px solid green;
+                position: absolute;
+                top: 130px;
+                right: 0px;
+                display: none;
+            }
+            
+            #box_four{
+                height: 200px;
+                width: 300px;
+                border: 1px solid yellow;
+                position: absolute;
+                top: 130px;
+                right: 0px;
+                display: none;
+            }
+            
+            .fb{
+                position: absolute;
+                right: 0px;
+                top: 350px;
+                width: 80px;
+            }
+            .tw{
+                position: absolute;
+                right: 0px;
+                top: 380px;
+                width: 80px;
+            }
+            .ln{
+                position: absolute; 
+                right: 0px;
+                top: 410px;
+                width: 80px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <button type="button" onclick="change_div_content('default');" style="margin-left:70px;">Default</button>
+        <button type="button" onclick="change_div_content('home');">Home</button>
+        <button type="button" onclick="change_div_content('about');">About</button>
+        <button type="button" onclick="change_div_content('contact');">Contact</button>
+        <div class="box_one">
+            <h1 id="heading">This is default heading</h1>
+            <img id="image" src="img/Mountain View.jpg" alt="image" height="250" width="350"/>
+            <p id="paragraph">This is default paragraph again This is default paragraph</p>
+        </div>
+        
+        <div id="box_two">
+            <h1>This is Facebook heading</h1>
+        </div>
+        <div id="box_three">
+            <h1>This is twitter heading</h1>
+        </div>
+        <div id="box_four">
+            <h1>This is LinkdIn heading</h1>
+        </div>
+        
+        
+        <button type="button" class="fb" onclick="show_div_content('fb');">Facebook</button>
+        <button type="button" class="tw" onclick="show_div_content('tw');">Twitter</button>
+        <button type="button" class="ln" onclick="show_div_content('ln');">Linkdin</button>
+        
+        <script>
+            function show_div_content(sicon) {
+                
+                var div_one = document.getElementById('box_two');
+                var div_two = document.getElementById('box_three');
+                var div_three = document.getElementById('box_four');
+                if(sicon=='fb'){
+                    div_one.style.display='block';
+                    div_two.style.display='none';
+                    div_three.style.display='none';
+                    
+                }
+                
+                else if(sicon=='tw'){
+                    div_one.style.display='none';
+                    div_two.style.display='block';
+                    div_three.style.display='none';
+                    
+                }
+                
+                else if(sicon=='ln'){
+                    div_one.style.display='none';
+                    div_two.style.display='none';
+                    div_three.style.display='block';
+                    
+                }
+                
+                
+            }
+                
+            
+        </script>
+        
+
+        <script>
+            function change_div_content(menu_item) {
+            var heading = document.getElementById('heading');
+            var image = document.getElementById('image');
+            var paragraph = document.getElementById('paragraph');
+            
+            if(menu_item == 'home'){
+                heading.innerHTML = 'this is a home heading';
+            image.src = "img/one.jpg";
+            paragraph.innerHTML = 'tis is a home paragraph';
+            }
+            
+            else if(menu_item == 'about'){
+                heading.innerHTML = 'this is a about heading';
+            image.src = "img/two.jpg";
+            paragraph.innerHTML = 'tis is a about paragraph';
+            }
+            
+            else if(menu_item == 'contact'){
+                heading.innerHTML = 'this is a contact heading';
+            image.src = "img/three.jpg";
+            paragraph.innerHTML = 'tis is a contact paragraph';
+            }
+            
+            else if(menu_item == 'default'){
+                heading.innerHTML = 'this is a default heading';
+            image.src = "img/Mountain View.jpg";
+            paragraph.innerHTML = 'tis is a default paragraph';
+            }
+            } 
+
+        </script>
+
+
+    </body>
+</html>

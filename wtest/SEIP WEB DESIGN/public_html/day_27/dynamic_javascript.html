@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Enter your Height</td>
+                <td><input type="number" id="height"></td>
+            </tr>
+            
+            <tr>
+                <td>Enter your width</td>
+                <td><input type="number" id="width"></td>
+            </tr>
+            
+            
+            <tr>
+                <td>Enter your background-color</td>
+                <td><input type="text" id="background_color"></td>
+            </tr>
+            
+            <tr>
+                <td>Enter your border-radius</td>
+                <td><input type="number" id="border_radius"></td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td><input type="submit" name="btn" value="Create Element" onclick="create_element();"></td>
+            </tr>
+            
+        </table>
+        
+         <hr/>
+            <h3>Your element is:</h3>
+            
+            <div id="my_div"></div>
+            
+            <script>
+                function create_element() {
+                 var height =  document.getElementById('height').value; 
+                 var width =  document.getElementById('width').value; 
+                 var background_color =  document.getElementById('background_color').value; 
+                 var border_radius =  document.getElementById('border_radius').value; 
+                 
+                 var div = document.getElementById('my_div');
+                 div.style.height=height+'px';
+                 div.style.width=width+'px';
+                 div.style.backgroundColor=background_color;
+                 div.style.borderRadius=border_radius+'px'; 
+                 
+                 
+                 
+                 
+                }
+            </script>
+            
+    </body>
+</html>

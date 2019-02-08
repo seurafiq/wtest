@@ -1,0 +1,39 @@
+/*@media only screen and (min-width:0px) and (max-width:480px) {
+    body{
+        background: greenyellow;}
+    .main_menu ul li a{
+        color: red;
+        font-size: 7px;
+    }
+    
+}   */
+
+@media only screen and (min-width:0px) and (max-width:480px) {
+    body{background: greenyellow;}
+    .col-9{width: 100%;}   /*eta nenu er col-9*/
+    .col-3.left_sidebar{width: 100%}
+    .col-6.Content{width: 100%}
+    .col-3.right_sidebar{width: 100%}
+    .footer_top .col-3{width: 100%}
+
+}
+
+
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+    body{
+        background: green;}
+    .col-9{width: 100%;}  /*eta menu er col-9*/
+    .main_menu ul li a{
+        padding: 9px 17px;}
+    .col-3.left_sidebar{width: 50%}
+    .col-6.Content{width: 50%}
+    .col-3.right_sidebar{width: 100%}
+    .footer_top .col-3{width: 50%}
+
+}
+
+@media only screen and (min-width:767px) and (max-width:992px) {
+    body{
+        background: yellow;}
+}

@@ -1,0 +1,22 @@
+.my_searchbar_margin{
+    margin-left: 15%;
+}
+.product_height{
+    margin-top: 10px;
+}
+.product_shadow:hover{
+    box-shadow: 0px 0px 10px 5px #cccccc;
+}
+.panel_shadow{
+    box-shadow:  5px 2px 5px #cccccc;
+}
+.my_ul{
+    list-style-type: none;
+}
+.my_ul a{
+    color: white;
+}
+address span{
+    color: white;
+}
+

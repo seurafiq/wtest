@@ -1,0 +1,78 @@
+body{
+    background: #999999;
+    margin: 0;
+}
+.wrapper{
+    width: 90%;
+    /*height: 1000px;*/
+    background: #eee;
+    margin: auto;
+}
+.wrapper .header{
+    width: 100%;
+    height: 150px;
+    /*    background: #444;*/
+}
+.header .logo{
+    width: 20%;
+    height: 100%;
+    /*background: #444;*/
+    float: left;
+    margin-right: 0.2%;
+    background-image: url(../img/fish.jpg);
+    /*background: url(../img/fish.jpg) no-repeat center/cover;*/
+}
+.header .banner{
+    width: 59.60%;
+    height: 100%;
+    background: #444;
+    float: left;
+    margin-right: 0.2%;
+
+}
+.header .login{
+    width: 20%;
+    height: 100%;
+    background: #444;
+    float: left;
+}
+.wrapper .menu{
+    width: 100%;
+    height: 40px;
+    background: #444;
+    margin-top: 2px;
+}
+.main_content{
+    width: 100%;
+    height: 700px;
+    /*background: #444;*/
+    margin-top: 2px;
+    
+}
+.main_content .left_sidebar{
+    width: 20%;
+    height: 100%;
+    background: #444;
+    float: left;
+    margin-right: .2%;
+    
+}
+.main_content .content{
+    width: 59.6%;
+    height: 100%;
+    background: #444;
+    float: left;
+    margin-right: .2%;
+}
+.main_content .right_sidebar{
+    width: 20%;
+    height: 100%;
+    background: #444;
+    float: left;
+}
+.wrapper .footer{
+    width: 100%;
+    height: 100px;
+    background: #444;
+    margin-top: 2px;
+}

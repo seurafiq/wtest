@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+}
+.logo{
+    width: 20%;
+    height: 150px;
+    background-color: red;
+    float: left;
+}
+.banner{
+    width: 80%;
+    height: 150px;
+    background-color: green;
+    float: left;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: #ff00cc;
+    float: left;
+}
+.Left_sidebar{
+    width: 20%;
+    height: 500px;
+    background-color:#009999;
+    float: left;
+}
+.Content{
+    width: 80%;
+    height: 500px;
+    background-color: #ff6666;
+    float: left;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #009999;
+    float: left;
+}
+.parent{
+    width: 90%;
+    margin:auto;
+}
